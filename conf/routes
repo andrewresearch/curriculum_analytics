@@ -1,0 +1,11 @@
+
+# General application routes
+#GET     /                       controllers.Assets.at(path="/assets/", file="index.html")
+
+#controllers.ApplicationController.index
+#GET     /health                 controllers.ApplicationController.health
+
+# Assets
+GET /assets/*file               controllers.Assets.at(file)
+GET /versionedAssets/*file      controllers.Assets.versioned(file)
+
